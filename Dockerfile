@@ -41,6 +41,3 @@ RUN chmod +x /etc/my_init.d/config.sh
 RUN mkdir /etc/service/transmission
 ADD transmission.sh /etc/service/transmission/run
 RUN chmod +x /etc/service/transmission/run
-
-# Install transmission web interface
-RUN curl https://transmission-control.googlecode.com/files/tr-control-easy-install.sh | sh
