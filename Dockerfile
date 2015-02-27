@@ -33,7 +33,7 @@ EXPOSE 54321
 ADD settings.json /tmp/
 
 # Add kettu interface
-ADD kettu /tmp/
+ADD kettu /tmp/kettu
 ENV TRANSMISSION_WEB_HOME /tmp/kettu
 
 # Add config.sh to execute during container startup
