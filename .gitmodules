@@ -1,0 +1,3 @@
+[submodule "kettu"]
+	path = kettu
+	url = https://github.com/endor/kettu.git
