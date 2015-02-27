@@ -11,14 +11,14 @@
   "blocklist-enabled": false,
   "blocklist-url": "http://www.example.com/blocklist",
   "cache-size-mb": 4,
-  "dht-enabled": true,
+  "dht-enabled": false,  // Disabling DHT for PT usage
   "download-dir": "/downloads/downloaded",
-  "download-limit": 100,
+  "download-limit": 500,
   "download-limit-enabled": 0,
-  "download-queue-enabled": true,
+  "download-queue-enabled": false,
   "download-queue-size": 5,
-  "encryption": 1,
-  "idle-seeding-limit": 30,
+  "encryption": 2,  // Force encryption for PT usage
+  "idle-seeding-limit": 0,
   "idle-seeding-limit-enabled": false,
   "incomplete-dir": "/downloads/incomplete",
   "incomplete-dir-enabled": true,
@@ -34,11 +34,11 @@
   "peer-port-random-low": 49152,
   "peer-port-random-on-start": false,
   "peer-socket-tos": "default",
-  "pex-enabled": true,
-  "port-forwarding-enabled": false,
+  "pex-enabled": false,  // Disable PEX for PT usage
+  "port-forwarding-enabled": false,  // Docker does not understand UPnP
   "preallocation": 1,
   "prefetch-enabled": 1,
-  "queue-stalled-enabled": true,
+  "queue-stalled-enabled": false,  // Never stall
   "queue-stalled-minutes": 30,
   "ratio-limit": 2,
   "ratio-limit-enabled": false,
@@ -46,7 +46,7 @@
   "rpc-authentication-required": true,
   "rpc-bind-address": "0.0.0.0",
   "rpc-enabled": true,
-  "rpc-password": "pass",
+  "rpc-password": "pass",  // Will set from commandline
   "rpc-port": 9091,
   "rpc-url": "/transmission/",
   "rpc-username": "transmission",
